@@ -5,7 +5,7 @@
   "main": "src/js/main.js",
   "scripts": {
     "build": "tsc",
-    "start": "concurrently \"tsc --watch\" \"live-server\"",
+    "start": "concurrently \"tsc --watch\" \"live-server --port=3000 --host=localhost\"",
     "lint": "eslint 'src/**/*.ts'"
   },
   "keywords": [
