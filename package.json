@@ -1,0 +1,31 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio for FTS Training with a Windows-style design.",
+  "main": "src/js/main.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "concurrently \"tsc --watch\" \"live-server\"",
+    "lint": "eslint 'src/**/*.ts'"
+  },
+  "keywords": [
+    "Portfolio",
+    "FTS",
+    "Windows-style",
+    "personal"
+  ],
+  "author": "Amjad Kayed",
+  "devDependencies": {
+    "@eslint/js": "^9.10.0",
+    "@typescript-eslint/eslint-plugin": "^8.4.0",
+    "@typescript-eslint/parser": "^8.4.0",
+    "concurrently": "^8.2.2",
+    "eslint": "^9.10.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.9.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.4.0"
+  }
+}
