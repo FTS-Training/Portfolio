@@ -1,0 +1,23 @@
+#DesktopItem {
+  min-width: 70px;
+  min-height: 70px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  position: relative;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+}
+
+#DesktopItem:hover {
+  background-color: #ffffff50;
+  border: 1px solid #b0b0b0;
+  position: relative;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+}

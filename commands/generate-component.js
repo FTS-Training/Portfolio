@@ -24,20 +24,23 @@ if (!fs.existsSync(componentDir)) {
 
 fs.writeFileSync(
   tsFilePath,
-  `// TypeScript code for ${componentName} component\n`,
+  `
+import Component from '../../Decorators/ComponentDecorator';
+import BaseComponent from '../BaseComponent';
+import ${componentName}ComponentHTML from './${componentName}.html';
+import './${componentName}.css';
+
+@Component(${componentName}ComponentHTML)
+export default class ${componentName}Component extends BaseComponent {
+  // Add your code here
+}
+
+`,
   'utf8'
 );
 
-fs.writeFileSync(
-  htmlFilePath,
-  `<!-- HTML code for ${componentName} component -->\n`,
-  'utf8'
-);
+fs.writeFileSync(htmlFilePath, `<div id="${componentName}"></div>`, 'utf8');
 
-fs.writeFileSync(
-  cssFilePath,
-  `/* CSS styles for ${componentName} component */\n`,
-  'utf8'
-);
+fs.writeFileSync(cssFilePath, `#${componentName} {}`, 'utf8');
 
 console.log(`Component ${componentName} created successfully.`);

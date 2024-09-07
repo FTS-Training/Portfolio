@@ -1,6 +1,6 @@
 import './styles/index.css';
 import { setWindowsState } from './appState';
-import { createComponent } from './components/Taskbar/Taskbar';
+import DesktopComponent from './components/Desktop/Desktop';
 import { Windows } from './types';
 
 function initApp() {
@@ -11,6 +11,7 @@ function initApp() {
   };
 
   setWindowsState(initWindows);
-  createComponent();
+  const desktop = new DesktopComponent('app');
+  desktop.render();
 }
 initApp();
