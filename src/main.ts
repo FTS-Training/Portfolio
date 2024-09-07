@@ -1,15 +1,13 @@
 import './styles/index.css';
 import { setWindowsState } from './appState';
 import { createComponent } from './components/Taskbar/Taskbar';
-import { Windows } from './types/Windows';
+import { Windows } from './types';
 
 function initApp() {
   const initWindows: Windows = {
-    desktop: [],
-    myComputer: [],
-    recycleBin: [],
-    documents: [],
-    desktopBackgroundImage: './assets/windows10BackgroundImage.jpg',
+    config: {
+      desktopBackgroundImage: './assets/windows10BackgroundImage.jpg',
+    },
   };
 
   setWindowsState(initWindows);

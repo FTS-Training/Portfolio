@@ -1,9 +1,8 @@
 import { FileSystemNode } from './FileSystemNode';
 
 export type Windows = {
-  desktop: FileSystemNode[];
-  myComputer: FileSystemNode[];
-  recycleBin: FileSystemNode[];
-  documents: FileSystemNode[];
-  desktopBackgroundImage: string;
+  config: {
+    desktopBackgroundImage: string;
+  };
+  FileSystem?: { [key: string]: FileSystemNode };
 };
