@@ -1,7 +1,7 @@
-import { setWindowsState } from '../appState';
-import { createComponent } from '../components/Taskbar/Taskbar';
-import { Windows } from '../types/Windows';
-import '../styles/index.css';
+import './styles/index.css';
+import { setWindowsState } from './appState';
+import { createComponent } from './components/Taskbar/Taskbar';
+import { Windows } from './types/Windows';
 
 function initApp() {
   const initWindows: Windows = {

@@ -2,6 +2,7 @@ import component from './Taskbar.html';
 import './Taskbar.css';
 
 export function createComponent() {
+  console.log(component);
   const componentElement = document.getElementById('app');
-  if (componentElement) document.getElementById('app').innerHTML = component;
+  if (componentElement) componentElement.innerHTML = component;
 }
